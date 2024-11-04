@@ -23,7 +23,7 @@ if uploaded_file is not None:
     image_array = np.array(image) / 255.0
 
     # Afficher l'image téléchargée
-    st.image(image, caption='Image téléchargée', use_column_width=True)
+    st.image(image, caption='Image téléchargée', width=500)
 
     # Convertir l'image pour le modèle
     input_image = np.expand_dims(image_array, axis=0)
